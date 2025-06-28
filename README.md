@@ -1,0 +1,1 @@
+This is a refactor of my portfolio site written in straight html/js.

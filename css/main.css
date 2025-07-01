@@ -125,6 +125,7 @@
     text-align:left;
     box-shadow: 0 8px 8px 0px lightgray;
     padding-inline:2.5%;
+    line-height:1.5; 
 }
 
 .page_button:hover {
@@ -191,6 +192,9 @@
     }
     .title_page_title {
         margin-left:0rem;
+    }
+    .page_button {
+        padding-inline:5%;
     }
 }
 

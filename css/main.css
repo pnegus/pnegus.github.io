@@ -105,8 +105,30 @@
     margin-left:2rem;
 }
 
-.page_button {
+.button_list {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    justify-content:space-around;
+}
 
+.page_button {
+    margin-top:-10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:white;
+    width:40%;
+    height:30%;
+    border-radius:1rem;
+    text-align:left;
+    box-shadow: 0 8px 8px 0px lightgray;
+    padding-inline:2.5%;
+}
+
+.page_button:hover {
+    background-color:rgb(0, 110, 255);
 }
 
 .quick_link_list {

@@ -70,14 +70,14 @@
 }
 
 .title_page_title {
-    font-size:3rem;
+    font-size:4rem;
     font-weight:normal;
     margin-left:2rem;
     align-self:center;
 }
 
 .page_title {
-    font-size:3rem;
+    font-size:4rem;
     font-weight:normal;
 }
 
@@ -101,7 +101,7 @@
     grid-column:1 / 2; 
     grid-row: 2/3; 
     line-height:1.5; 
-    margin-top:-2rem;
+    margin-top:-4rem;
     margin-left:2rem;
 }
 
@@ -111,10 +111,10 @@
     align-items:center;
     height:100%;
     justify-content:space-around;
+    margin-top:-5%;
 }
 
 .page_button {
-    margin-top:-10%;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -140,18 +140,24 @@
     align-items:center;
     justify-content:center;
     gap:1rem;
-    justify-self:right;
-    margin-right:20%;
+    justify-self:center;
+    margin-right:-35%;
+}
+
+.quick_link_box {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0, 110, 255);
+    width:3rem;
+    height:3rem;
+    border-radius:0.25rem;
 }
 
 .quick_link {
-    background-color:rgba(0, 110, 255);
-    padding-inline:1rem;
-    padding-top:1rem;
-    padding-bottom:1rem;
-    width:25px;
-    height:25px;
-    border-radius:0.25rem;
+    width:100%;
+    height:100%;
 }
 
 .image_container {
@@ -160,11 +166,10 @@
     min-height:0%;
     min-width:0%;
     grid-column: 2/2;
-    justify-self:right;
+    justify-self:center;
     align-self:center;
-    /* grid-row: 2/3; */
-    margin-top: 10rem;
-    margin-right:2.5rem;
+    margin-top: 12rem;
+    margin-right:-35%;
 }
 
 .page_footer {
@@ -179,7 +184,6 @@
     }
     .container_text {
         margin-top:0rem;
-        
     }
     .quick_link_list {
         margin-top: 3rem;
@@ -195,6 +199,8 @@
     }
     .page_button {
         padding-inline:5%;
+        width:60%;
+        height:40%;
     }
 }
 

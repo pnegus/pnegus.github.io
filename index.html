@@ -1,90 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>welcome</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%221em%22 font-size=%2280%22>👋</text></svg>">        
-        <link rel="stylesheet" href="css/main.css">
-    </head>
 
-    <body class="body">
-        <div class="nav">
-            <h1 class="nav_title">
-                <b>Patrick</b> Negus
-            </h1>
-            <ul class="nav_list">
-                <li class="nav_button"><a href="index.html">Home</a></li>
-                <li class="nav_button"><a href="about.html">Projects</a></li>
-                <li class="nav_button"><a href="contact.html">Resume</a></li>
-            </ul>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Negus</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%221em%22 font-size=%2280%22>👋</text></svg>">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
 
-        <div class="page_wrapper">
-            <div class="page">
-                <div class="title_page_container">
-                    <h2 class="title_page_title">
-                        <b>Hey</b> there!
-                    </h2>
-                    <p class="container_text">
-                        I'm currently a DevOps engineer at Sailpoint. I graduated from UMass Amherst with a CS major/math minor in 2024. 
-                        My current work involves dealing with microservices at a massive      scale, with a focus on IaC via Terraform and AWS.
-                        My primary domains are working with Kubernetes/EKS, Terraform, and writing Python scripts for automation.
-                        <br/>
-                        <br/>
-                        I (perhaps unfortunately) play Valorant in my free time. Currently ranked Immortal 1.
-                    </p>
-                    <div class="image_container">
-                        <img src="images/headshot.jpg" alt="me" style="width:100%; height:100%; border-radius:1rem;">
-                    </div>
-                    <ul class="quick_link_list">
-                        <li class="quick_link_box">
-                            <a class="quick_link" href="https://github.com/pnegus">
-                                <img src="images/github-mark-white.png" style="width:100%; height:100%; scale:0.5;">
-                            </a>
-                        </li>
-                        <li class="quick_link_box">
-                            <a class="quick_link" href="https://www.linkedin.com/in/patrick-negus-b1546620b/">
-                                <img src="images/l-in-logo.png" style="width:100%; height:100%; scale:0.5;">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="page_footer">⬇️</div>
-            </div>
- 
-            <div class="page">
-                <div class="page_container">
-                    <h2 class="page_title">
-                        <b>My</b> Projects
-                    </h2>
-                    <ul class="button_list">
-                        <li class="page_button">
-                            <b>Budgeting Application</b> 
-                                </br>
-                            built using React Native >
-                        </li>
-                        <li class="page_button"> 
-                            <b>Portfolio Website</b>
-                                </br>
-                            written in both vanilla HTML/CSS and NextJS >
-                        </li>
-                    </ul>
-                </div>
-                <div class="page_footer">⬇️</div>
-            </div>
+<body class="body">
+    <nav class="nav">
+        <h1 class="nav_title">
+            <b>Patrick</b> Negus
+        </h1>
+        <ul class="nav_list">
+            <li class="nav_button"><a href="#home">Home</a></li>
+            <li class="nav_button"><a href="#projects">Projects</a></li>
+            <li class="nav_button"><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
 
-            <div class="page">
-                <div class="page_container">
-                    <h2 class="page_title">
-                        <b>My</b> Resume
-                    </h2>
-                    <ul class="button_list">
-                        <li class="page_button"><b>Download ></b></li>
-                    </ul>
+    <div class="page_wrapper">
+        <section id="home" class="page">
+            <div class="title_page_container">
+                <h2 class="title_page_title">
+                    <b>Hey</b> there!
+                </h2>
+                <p class="container_text">
+                    I'm currently a DevOps engineer at Sailpoint. I graduated from UMass Amherst with a CS major/math
+                    minor in 2024.
+                    My current work involves dealing with microservices at a massive scale, with a focus on IaC via
+                    Terraform and AWS.
+                    My primary domains are working with Kubernetes/EKS, Terraform, and writing Python scripts for
+                    automation.
+                    <br />
+                    <br />
+                    I (perhaps unfortunately) play Valorant in my free time. Currently ranked Immortal 1.
+                </p>
+                <div class="image_container">
+                    <img src="images/headshot.jpg" alt="Patrick Negus Headshot" class="profile_image">
                 </div>
-                <div class="page_footer">⬇️</div>
+                <ul class="quick_link_list">
+                    <li class="quick_link_box">
+                        <a class="quick_link" href="https://github.com/pnegus" aria-label="GitHub">
+                            <img src="images/github-mark-white.png" alt="GitHub Logo" class="quick_link_icon">
+                        </a>
+                    </li>
+                    <li class="quick_link_box">
+                        <a class="quick_link" href="https://www.linkedin.com/in/patrick-negus-b1546620b/"
+                            aria-label="LinkedIn">
+                            <img src="images/l-in-logo.png" alt="LinkedIn Logo" class="quick_link_icon">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </body>
+            <div class="page_footer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 9L12 15L6 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <div class="page_container">
+                <h2 class="page_title">
+                    <b>My</b> Projects
+                </h2>
+                <ul class="button_list">
+                    <li class="page_button">
+                        <b>Budgeting Application</b>
+                        <br />
+                        built using React Native >
+                    </li>
+                    <li class="page_button">
+                        <b>Portfolio Website</b>
+                        <br />
+                        written in both vanilla HTML/CSS and NextJS >
+                    </li>
+                </ul>
+            </div>
+            <div class="page_footer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 9L12 15L6 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </section>
+
+        <section id="resume" class="page">
+            <div class="page_container">
+                <h2 class="page_title">
+                    <b>My</b> Resume
+                </h2>
+                <ul class="button_list">
+                    <li class="page_button"><b>Download ></b></li>
+                </ul>
+            </div>
+            <div class="page_footer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 9L12 15L6 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </section>
+    </div>
+</body>
+
 </html>

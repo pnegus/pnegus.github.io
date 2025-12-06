@@ -31,24 +31,24 @@
 .nav_list {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding-right: 1rem;
-    gap: 1rem;
 }
 
 .nav_button {
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     transition: background-color 0.2s, color 0.2s;
 }
 
 .nav_button:hover {
     background-color: rgb(0, 110, 255);
     color: white;
+}
+
+.nav_link {
+    display:block;
+    padding:1rem;
 }
 
 .page_wrapper {
@@ -199,7 +199,17 @@
     margin-top: 2rem;
 }
 
-@media only screen and (max-width: 48rem) {
+@media (max-width: 48rem) {
+    .nav {
+        flex-direction:column;
+        padding-top:1rem;
+    }
+
+    .nav_list {
+        padding-top:1rem;
+        flex-direction:column;
+        width:95%;
+    }
 
     .title_page_container {
         grid-template-columns: 1fr;

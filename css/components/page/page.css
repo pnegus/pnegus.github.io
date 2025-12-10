@@ -14,8 +14,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 4rem;
-    /* Offset for sticky nav */
-    box-sizing: border-box;
 }
 
 .title_page_container,
@@ -43,7 +41,6 @@
 .title_page_title,
 .page_title {
     font-size: 3rem;
-    /* Scaled down slightly for better fit */
     font-weight: normal;
     margin: 0;
     align-self: center;

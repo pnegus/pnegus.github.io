@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 const sectionId = href.substring(1);
                 scrollToSection(sectionId);
+                hamburger.classList.toggle('is-active');
+                navmenu.classList.toggle('is-open');
             }
         });
     });

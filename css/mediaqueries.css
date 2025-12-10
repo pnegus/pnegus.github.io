@@ -1,6 +1,5 @@
 @media (max-width: 48rem) {
     .nav {
-        flex-direction:column;
         padding-top:1rem;
     }
 

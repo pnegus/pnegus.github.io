@@ -12,6 +12,10 @@ function scrollToNextSection(currentSection) {
     }
 }
 
+function toggleHamburger() {
+
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav_button a');
     navLinks.forEach(link => {
@@ -37,5 +41,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (index === pageFooters.length - 1) {
             footer.style.display = 'none';
         }
+    });
+
+    const hamburger = document.querySelector('.hamburger');
+    const navmenu = document.querySelector('.nav_list')
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('is-active');
+        navmenu.classList.toggle('is-open');
     });
 });

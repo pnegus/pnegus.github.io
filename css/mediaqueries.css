@@ -43,6 +43,10 @@
         width: 100%;
     }
 
+    .page_wrapper {
+        padding-top:8rem;
+    }
+
     .hamburger {
         display: inline-block;
     }

@@ -1,7 +1,7 @@
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (sectionId === "home") {
-        window.scrollTo(0, 0);
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }
     else if (section) {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -18,6 +18,7 @@ function scrollToNextSection(currentSection) {
 
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav_button a');
+    const titleLink = document.querySelector('.title_link')
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -29,6 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 navmenu.classList.toggle('is-open');
             }
         });
+    });
+
+    titleLink.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const sectionId = href.substring(1);
+            scrollToSection(sectionId);
+        }
     });
 
     const pageFooters = document.querySelectorAll('.page_footer');

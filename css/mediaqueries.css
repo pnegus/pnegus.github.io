@@ -4,9 +4,9 @@
     }
 
     .nav_list {
-        padding-top:1rem;
+        display:none;
         flex-direction:column;
-        width:95%;
+        width:100%;
     }
 
     .title_page_container {
@@ -41,5 +41,9 @@
 
     .page_button {
         width: 100%;
+    }
+
+    .hamburger {
+        display: inline-block;
     }
 }

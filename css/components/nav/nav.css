@@ -10,6 +10,7 @@
     box-shadow: 0 0.0625rem 0.625rem lightgray;
     padding: 0.5rem 0;
     z-index: 1000;
+    padding-top:1rem;
 }
 
 .nav_title_container {
@@ -28,7 +29,7 @@
 }
 
 .nav_list {
-    display: none;
+    display: flex;
 }
 
 .nav_list.is-open {
@@ -40,7 +41,6 @@
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    border-radius: 0.5rem;
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -52,4 +52,8 @@
 .nav_link {
     display:block;
     padding:1rem;
+}
+
+.hamburger {
+    display:none; 
 }

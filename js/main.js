@@ -1,6 +1,12 @@
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
-    if (section) {
+    const nav = document.querySelector('.nav');
+    if (section && sectionId === "home") {
+        const navHeight = nav.offsetHeight;
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: sectionTop - navHeight, behavior: 'smooth' });
+    }
+    else {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
@@ -39,15 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const currentSection = this.closest('.page');
             scrollToNextSection(currentSection);
         });
-
-        if (index === pageFooters.length - 1) {
-            footer.style.display = 'none';
-        }
     });
 
     const hamburger = document.querySelector('.hamburger');
     const navmenu = document.querySelector('.nav_list')
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function () {
         hamburger.classList.toggle('is-active');
         navmenu.classList.toggle('is-open');
     });

@@ -1,12 +1,9 @@
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
-    const nav = document.querySelector('.nav');
-    if (section && sectionId === "home") {
-        const navHeight = nav.offsetHeight;
-        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({ top: sectionTop - navHeight, behavior: 'smooth' });
+    if (sectionId === "home") {
+        window.scrollTo(0, 0);
     }
-    else {
+    else if (section) {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
@@ -18,9 +15,6 @@ function scrollToNextSection(currentSection) {
     }
 }
 
-function toggleHamburger() {
-
-}
 
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav_button a');
@@ -54,3 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
         navmenu.classList.toggle('is-open');
     });
 });
+
+/* disgusting hack idfk how to fix */
+setTimeout(() => {
+    window.scrollTo(0, 0);
+}, 3);

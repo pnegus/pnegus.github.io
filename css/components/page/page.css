@@ -4,6 +4,7 @@
     flex: 1;
     gap: 2rem;
     padding-bottom: 2rem;
+    padding-top: 8rem;
 }
 
 .page {
@@ -13,7 +14,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
 }
 
 .title_page_container,

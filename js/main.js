@@ -1,6 +1,9 @@
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
-    if (section) {
+    if (sectionId === "home") {
+        window.scrollTo(0, 0);
+    }
+    else if (section) {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
@@ -12,6 +15,7 @@ function scrollToNextSection(currentSection) {
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav_button a');
     navLinks.forEach(link => {
@@ -21,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 const sectionId = href.substring(1);
                 scrollToSection(sectionId);
+                hamburger.classList.toggle('is-active');
+                navmenu.classList.toggle('is-open');
             }
         });
     });
@@ -33,9 +39,17 @@ document.addEventListener('DOMContentLoaded', function () {
             const currentSection = this.closest('.page');
             scrollToNextSection(currentSection);
         });
+    });
 
-        if (index === pageFooters.length - 1) {
-            footer.style.display = 'none';
-        }
+    const hamburger = document.querySelector('.hamburger');
+    const navmenu = document.querySelector('.nav_list')
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('is-active');
+        navmenu.classList.toggle('is-open');
     });
 });
+
+/* disgusting hack idfk how to fix */
+setTimeout(() => {
+    window.scrollTo(0, 0);
+}, 3);

@@ -1,8 +1,7 @@
 .page_wrapper {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    gap: 2rem;
+    /* flex: 1; */
     padding-top: 4rem;
 }
 
@@ -24,7 +23,7 @@
     border-radius: 1rem;
     width: 90%;
     max-width: 60rem;
-    padding: 2rem;
+    padding: 4rem;
     box-shadow: 0 0.5rem 0.5rem 0 lightgray;
     border: 0.0625rem solid lightgray;
     box-sizing: border-box;

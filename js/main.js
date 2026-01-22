@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/* disgusting hack idfk how to fix */
+
 setTimeout(() => {
     window.scrollTo(0, 0);
 }, 3);

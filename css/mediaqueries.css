@@ -1,6 +1,7 @@
 @media (max-width: 48rem) {
     .nav {
         padding-top:1rem;
+        flex-wrap: wrap;
     }
 
     .nav_title_container {
